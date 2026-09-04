@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: loja
+
+  datasource:
+    url: jdbc:h2:mem:loja;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    io.github.vmarins2005.loja: INFO
